@@ -11,13 +11,13 @@ class Banda {
     method popularidad()
 }
 
-class rock inherits Banda {
+class Rock inherits Banda {
     var cantidadSolos
     override method gastoExtra() = 10000
     override method popularidad() = 100 * cantidadSolos
 }
 
-class trap inherits Banda {
+class Trap inherits Banda {
     var tieneHielo
     override method gastoExtra() = 0
 
@@ -33,7 +33,7 @@ class trap inherits Banda {
     override method canon() = super() * self.popularidad()
 }
 
-class indie inherits Banda {
+class Indie inherits Banda {
     var cantidadInstrumentos
     override method gastoExtra() = 500 * cantidadInstrumentos
     override method popularidad() = 3.14 * nombre.size()
